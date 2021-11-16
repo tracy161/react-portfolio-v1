@@ -1,0 +1,98 @@
+.navbar {
+  font-family: 'Oswald', sans-serif!important;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  background: transparent!important;
+  height: 130px;
+  width: 100%!important;
+  display: flex;
+  position: absolute!important;
+  top: 0;
+  z-index: 99999;
+  border-bottom: 1px solid hsla(0,0%,40%,.3);
+  transition: all .3s ease 0s;
+  -webkit-transition: all .3s ease 0s;
+}
+
+.fixed {
+  height: 100px;
+  position: fixed!important;
+  top: 0;
+  background-color: var(--background-color)!important;
+  border-bottom: none;
+}
+
+.offcanvas.show {
+  font-family: 'Oswald', sans-serif!important;
+  letter-spacing: 1px;
+  background-color: var(--background-offcanvas)!important;
+  color: var(--font-color);
+  width: 500px;
+  z-index: 99999;
+}
+
+.offcanvas-end {
+  font-family: 'Oswald', sans-serif!important;
+  background-color: var(--background-offcanvas)!important;
+  z-index: 99999;
+}
+
+.offcanvas-body {
+  padding: 2rem 2rem!important;
+}
+
+.nav-link-hover {
+  color: var(--font-color)!important;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  padding: 40px 20px!important;
+  border-radius: 4px;
+}
+
+.nav-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.nav-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #111;
+}
+
+.nav-item-hover:hover .nav-overlay {
+  opacity: .9;
+}
+
+.nav-text {
+  font-family: 'Oswald', sans-serif!important;
+  color: var(--font-color);
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn-close {
+  filter: invert(2);  
+}
+
+.navbar-toggler {
+  border-radius: 0rem!important;
+}

@@ -1,0 +1,87 @@
+.portfolio-section-title span {
+  color: #ddd!important;
+  margin-bottom: 10px;
+}
+
+.portfolio-section-title h2 {
+  font-family: 'Oswald', sans-serif!important;
+  font-size: 3.2rem;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+}
+
+.portfolio-section-filters ul {
+  display: inline-block;
+  overflow: hidden;
+  list-style: none;
+  padding: 0!important;
+}
+
+.portfolio-section-filters ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.portfolio-section-filters ul li a {
+  font-weight: 500;
+  color: #ddd;
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none!important;
+}
+
+.portfolio-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center!important;
+}
+
+.portfolio-tech-overlay {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ddd;
+  transform: translate(5.6%, 5%);
+}
+
+.portfolio-card:hover .portfolio-tech-overlay {
+  opacity: .8;
+}
+
+.portfolio-text {
+  color: var(--background-color);
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.modal-backdrop.show {
+  opacity: .2!important;
+}
+
+.modal-content {
+  border-radius: 0!important;
+}
+
+.portfolio-modal {
+  font-family: 'Oswald', sans-serif!important;
+  color: var(--background-color);
+}
+
+.portfolio-modal p {
+  font-family: 'Heebo', sans-serif!important;
+}
+
+#portfolio-modal-link {
+  padding: 0 0 1rem 1rem;
+  font-family: 'Heebo', sans-serif!important;
+}

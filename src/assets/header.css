@@ -1,0 +1,39 @@
+.main-info {
+  font-family: 'Oswald', sans-serif!important;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  color: var(--font-color);
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-info h4 {
+  font-family: 'Oswald', sans-serif!important;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 0;
+}
+
+.main-info h4:before {
+  content: "";
+  position: absolute;
+  right: -80px;
+  width: 85px;
+  height: 1px;
+  background: var(--font-color);
+  transition: all .3s;
+  margin-top: 10px;
+}
+
+.stringtyped {
+  font-family: 'Oswald', sans-serif!important;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
