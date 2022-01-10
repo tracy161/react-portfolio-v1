@@ -155,7 +155,7 @@ const Contact = () => {
         <hr />
         <div class='contact-copyright'>
           <h1>Tracy's Portfolio</h1>
-          <span>Copyright-2021</span>
+          <span>Copyright-{new Date().getFullYear()}</span>
         </div>
       </Container>
     </div>

@@ -11,19 +11,19 @@ const Portfolio = () => {
   const [modalShow, setMoDalShow] = useState(false);
   const [tempData, setTempData] = useState({});
 
-  const filtered = (techItem) => {
+  const filtered = techItem => {
     const updateItems = Projects.filter(
-      (currentItem) => currentItem.tech === techItem
+      currentItem => currentItem.tech === techItem
     );
     return setItems(updateItems);
   };
 
-  const createModal = (data) => {
+  const createModal = data => {
     return (
       <Modal
         show={modalShow}
         onHide={() => setMoDalShow(false)}
-        size="lg"
+        size='lg'
         arial-labelledby='contained-modal-title-vcenter'
         centered
         className='portfolio-modal'
@@ -32,13 +32,25 @@ const Portfolio = () => {
           <Modal.Title>{data.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <p>Woohoo, you're reading this text in a modal!</p>
-            <Image src={data.img} style={{ width: '300px', margin: 'auto'}}/>
+          <p>{data.des}</p>
+          <Image src={data.img} style={{ width: '300px', margin: 'auto' }} />
         </Modal.Body>
-        <a id='portfolio-modal-link' href={data.link} target='_blank' rel='noreferrer'>Go to site</a>
+        <a
+          id='portfolio-modal-link'
+          href={data.link}
+          target='_blank'
+          rel='noreferrer'
+        >
+          Go to site
+        </a>
         <Modal.Footer>
-          <p style={{ marginRight: 'auto'}}>Technologies used: {data.tech}</p>
-          <Button style={{ background: '#333'}} onClick={() => setMoDalShow(false)}>Close</Button>
+          <p style={{ marginRight: 'auto' }}>Technologies used: {data.tech}</p>
+          <Button
+            style={{ background: '#333' }}
+            onClick={() => setMoDalShow(false)}
+          >
+            Close
+          </Button>
         </Modal.Footer>
       </Modal>
     );
@@ -88,7 +100,11 @@ const Portfolio = () => {
                   style={{ margin: '15px', background: 'transparent' }}
                   className='portfolio-card'
                 >
-                  <Card.Img variant='top' src={item.img} />
+                  <Card.Img
+                    variant='top'
+                    src={item.img}
+                    style={{ opacity: '0.5' }}
+                  />
                   <Card.Title className='portfolio-tech-overlay'>
                     <div
                       className='portfolio-text'
@@ -96,10 +112,11 @@ const Portfolio = () => {
                         setTempData({
                           img: item.img,
                           link: item.link,
+                          des: item.des,
                           title: item.title,
                           tech: item.tech,
-                        })
-                        setMoDalShow(true)
+                        });
+                        setMoDalShow(true);
                       }}
                     >
                       <ImIcons.ImPlus />

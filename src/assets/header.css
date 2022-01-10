@@ -37,3 +37,58 @@
   line-height: 1.2em;
   text-transform: uppercase;
 }
+
+.copy {
+  font-family: "Oswald",sans-serif;
+  width: 100%;
+  z-index: 1;
+  font-size: 16px;
+  color: #fff;
+  text-align: right;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+}
+
+.social-links {
+  width: auto;
+  z-index: 1;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.social-links:before {
+  content: "";
+  width: 1px;
+  height: 50px;
+  background: hsla(0,0%,49%,.4);
+  position: absolute;
+  left: 8px;
+  top: -70px;
+}
+
+.social-links:after {
+  font-family: "Oswald",sans-serif;
+  color: #888;
+  content: "SOCIAL";
+  position: absolute;
+  left: -28px;
+  top: -135px;
+  letter-spacing: 5px;
+  transform: rotate(-90deg);
+}
+
+.social-links ul {
+  padding-left: 0rem!important;
+}
+
+.social-links li {
+  list-style: none;
+}
+
+.social-links li a {
+  font-size: 14px;
+  font-size: .93333rem;
+  color: #fff;
+}

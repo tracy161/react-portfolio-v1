@@ -2,7 +2,9 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import Typed from 'react-typed';
 import '../assets/header.css';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import { TiSocialLinkedin } from 'react-icons/ti';
+import { SiGmail } from 'react-icons/si';
 
 const Header = () => {
   return (
@@ -11,7 +13,8 @@ const Header = () => {
         <div className='main-info'>
           <h4>Hello! I am Tracy</h4>
           <br />
-          <Typed className='stringtyped'
+          <Typed
+            className='stringtyped'
             strings={[
               'An Interactive Developer',
               'Also known as a',
@@ -19,19 +22,41 @@ const Header = () => {
               'UX/UI Designer',
               'based in Melbourne, Australia',
               '',
-              '']}
-              typeSpeed={40}
-              backSpeed={50}
-              loop >
-          </Typed>
+              '',
+            ]}
+            typeSpeed={40}
+            backSpeed={50}
+            loop
+          ></Typed>
           <br />
           <div>
-          <a href='#contact'><Button variant="outline-light" size="lg">Contact Me</Button></a>  
+            <a href='#contact'>
+              <Button variant='outline-light' size='lg'>
+                Contact Me
+              </Button>
+            </a>
           </div>
         </div>
       </Container>
+      <div className='copy'>
+        <p>React Front-end Developer</p>
+      </div>
+      <div className='social-links'>
+        <ul>
+          <li>
+            <a href='#!'>
+              <TiSocialLinkedin />
+            </a>
+          </li>
+          <li>
+            <a href='#!'>
+              <SiGmail />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
