@@ -6,21 +6,25 @@ import react from '../assets/images/reactlogo.png'
 
 const techData = [
   {
+    id: 1,
     name: 'JAVASCRIPT',
     img: react,
     icon: <SiIcons.SiJavascript/>
   },
   {
+    id: 2,
     name: 'REACT.JS',
     img: react,
     icon: <FaIcons.FaReact/>
   },
   {
+    id: 3,
     name: 'REDUX.JS',
     img: react,
     icon: <SiIcons.SiRedux/>
   },
   {
+    id: 4,
     name: 'NODE.JS',
     img: react,
     icon: <FaIcons.FaNodeJs/>
@@ -31,16 +35,19 @@ const techData = [
     icon: <DiIcons.DiCss3/>
   },
   {
+    id: 5,
     name: 'BOOTSTRAP',
     img: react,
     icon: <BsIcons.BsBootstrapFill/>
   },
   {
+    id: 6,
     name: 'MATERIALIZE',
     img: react,
     icon: <DiIcons.DiMaterializecss/>
   },
   {
+    id: 7,
     name: 'ADOBE CREATIVE SUITS',
     img: react,
     icon: <SiIcons.SiAdobe />

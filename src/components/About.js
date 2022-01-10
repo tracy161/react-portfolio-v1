@@ -2,15 +2,29 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import person from '../assets/images/person.png';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-
 import '../assets/about.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const About = () => {
   return (
     <div id='about'>
       <Container>
         <Row className='about-section'>
-          <Col md={6} className='about-col'>
+          <Col
+            md={6}
+            className='about-col'
+            data-aos='fade-right'
+            data-aos-offset='100'
+            data-aos-delay='20'
+            data-aos-duration='1000'
+            data-aos-easing='ease-in-out'
+            data-aos-mirror='true'
+            data-aos-once='false'
+            data-aos-anchor-placement='top-center'
+          >
             <div className='about-content'>
               <div className='about-site-title'>
                 <span>Expert Web Developer &amp; Designer</span>
@@ -49,7 +63,17 @@ const About = () => {
             </div>
           </Col>
           <Col md={5}>
-            <div className='about-img'>
+            <div
+              className='about-img'
+              data-aos='fade-left'
+              data-aos-offset='100'
+              data-aos-delay='20'
+              data-aos-duration='1000'
+              data-aos-easing='ease-in-out'
+              data-aos-mirror='true'
+              data-aos-once='false'
+              data-aos-anchor-placement='top-center'
+            >
               <img src={person} alt='person-icon' />
             </div>
           </Col>

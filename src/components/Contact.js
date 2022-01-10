@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-
 import { Col, Container, Row, Button, Form } from 'react-bootstrap';
 import '../assets/contact.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const Result = () => {
   return (
@@ -14,7 +17,7 @@ const Contact = () => {
   const [validated, setValidated] = useState(false);
   const [result, setResult] = useState(false);
 
-  const onSubmit = (e) => {
+  const onSubmit = e => {
     e.preventDefault();
 
     if (e.currentTarget.checkValidity() === false) {
@@ -28,10 +31,10 @@ const Contact = () => {
           'user_ZlF2Cn2b583C4kl8gclfR'
         )
         .then(
-          (result) => {
+          result => {
             console.log(result.text);
           },
-          (error) => {
+          error => {
             console.log(error.text);
           }
         );
@@ -52,7 +55,17 @@ const Contact = () => {
       <Container>
         <Row className='pb-4'>
           <Col md={5}>
-            <div className='contact-page-item'>
+            <div
+              className='contact-page-item'
+              data-aos='fade-right'
+              data-aos-offset='100'
+              data-aos-delay='20'
+              data-aos-duration='1000'
+              data-aos-easing='ease-in-out'
+              data-aos-mirror='true'
+              data-aos-once='false'
+              data-aos-anchor-placement='top-center'
+            >
               <h2 className='mb-4'>My Contacts</h2>
               <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random
@@ -75,7 +88,12 @@ const Contact = () => {
             </div>
           </Col>
           <Col md={7}>
-            <Form noValidate validated={validated} onSubmit={onSubmit}>
+            <Form
+              noValidate
+              validated={validated}
+              onSubmit={onSubmit}
+              className='contact-page-item'
+            >
               <Row className='mb-4'>
                 <Form.Group as={Col} controlId='formGridName'>
                   <Form.Control

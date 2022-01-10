@@ -5,6 +5,11 @@ import Modal from 'react-bootstrap/Modal';
 import Projects from '../helpers/ProjectsData';
 import * as ImIcons from 'react-icons/im';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 const Portfolio = () => {
   const [items, setItems] = useState(Projects);
 
@@ -100,6 +105,14 @@ const Portfolio = () => {
                   key={index}
                   style={{ margin: '15px', background: 'transparent' }}
                   className='portfolio-card'
+                  data-aos='fade-up'
+                  data-aos-offset='100'
+                  data-aos-delay='20'
+                  data-aos-duration='1000'
+                  data-aos-easing='ease-in-out'
+                  data-aos-mirror='true'
+                  data-aos-once='false'
+                  data-aos-anchor-placement='top-center'
                 >
                   <Card.Img
                     variant='top'
