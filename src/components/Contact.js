@@ -52,23 +52,23 @@ const Contact = () => {
       <Container>
         <Row className='pb-4'>
           <Col md={5}>
-            <div class='contact-page-item'>
+            <div className='contact-page-item'>
               <h2 className='mb-4'>My Contacts</h2>
               <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random
                 text. It has roots in a piece of classical Latin literature from
                 45 BC, making it over 2000 years old.
               </p>
-              <div class='adress' className='mb-4'>
+              <div className='adress mb-4'>
                 <h3>Address</h3>
                 <span>245 King Street, Touterie Victoria 8520 Australia</span>
               </div>
-              <div class='phone' className='mb-4'>
+              <div className='phone mb-4'>
                 <h3>Phone</h3>
                 <span>0-123-456-7890</span>
                 <span>0-123-456-7890</span>
               </div>
-              <div class='email' className='mb-4'>
+              <div className='email mb-4'>
                 <h3>Email</h3>
                 <span>sample@gmail.com</span>
               </div>
@@ -153,7 +153,7 @@ const Contact = () => {
           </Col>
         </Row>
         <hr />
-        <div class='contact-copyright'>
+        <div className='contact-copyright'>
           <h1>Tracy's Portfolio</h1>
           <span>Copyright-{new Date().getFullYear()}</span>
         </div>

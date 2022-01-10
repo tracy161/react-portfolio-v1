@@ -60,13 +60,13 @@ const Portfolio = () => {
     <div id='portfolio' style={{ padding: '100px 0 70px' }}>
       <Container>
         <Row>
-          <div class='portfolio-section-title text-center'>
+          <div className='portfolio-section-title text-center'>
             <span>Portfolio</span>
             <h2>Work I Have Done</h2>
           </div>
         </Row>
         <Row>
-          <div class='portfolio-section-filters text-center'>
+          <div className='portfolio-section-filters text-center'>
             <ul>
               <li>
                 <a href='#!' onClick={() => setItems(Projects)}>
@@ -91,6 +91,7 @@ const Portfolio = () => {
             </ul>
           </div>
         </Row>
+
         <Row className='portfolio-row'>
           {items.map((item, index) => {
             return (

@@ -9,7 +9,7 @@ const Technologies = () => {
     <div id='technologies' style={{background: '#202020', padding: '100px 0 70px'}}>
       <Container>
         <Row>
-          <div class="techs-section-title text-center">
+          <div className="techs-section-title text-center">
             <span>Some of the Technologies I use</span>
             <h2>Technologies</h2>
           </div>
