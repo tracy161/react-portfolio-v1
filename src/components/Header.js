@@ -18,7 +18,7 @@ const Header = () => {
             strings={[
               'A Full-Stack Developer',
               'Also known as a',
-              'Front-end Developer',
+              'React Front-end Developer',
               'UX/UI Designer',
               'based in Melbourne, Australia',
               '',
