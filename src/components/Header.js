@@ -44,12 +44,12 @@ const Header = () => {
       <div className='social-links'>
         <ul>
           <li>
-            <a href='#!'>
+            <a href='https://www.linkedin.com/in/tracyp161/'>
               <TiSocialLinkedin />
             </a>
           </li>
           <li>
-            <a href='#!'>
+            <a href='mailto:tracyp161@gmail.com'>
               <SiGmail />
             </a>
           </li>
