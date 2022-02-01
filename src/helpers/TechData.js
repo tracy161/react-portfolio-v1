@@ -3,12 +3,19 @@ import * as SiIcons from 'react-icons/si';
 import * as DiIcons from 'react-icons/di';
 import * as BsIcons from 'react-icons/bs';
 import react from '../assets/images/reactlogo.png'
+import javascript from '../assets/images/javascriptlogo.png'
+import redux from '../assets/images/reduxlogo.jpeg'
+import node from '../assets/images/nodejslogo.jpg'
+import htmlcss from '../assets/images/htmlcsslogo.png'
+import bootstrap from '../assets/images/bootstraplogo.png'
+import material from '../assets/images/matrializelogo.png'
+import wordpress from '../assets/images/wordpresslogo.png'
 
 const techData = [
   {
     id: 1,
     name: 'JAVASCRIPT',
-    img: react,
+    img: javascript,
     icon: <SiIcons.SiJavascript/>
   },
   {
@@ -20,37 +27,37 @@ const techData = [
   {
     id: 3,
     name: 'REDUX.JS',
-    img: react,
+    img: redux,
     icon: <SiIcons.SiRedux/>
   },
   {
     id: 4,
     name: 'NODE.JS',
-    img: react,
+    img: node,
     icon: <FaIcons.FaNodeJs/>
   },
   {
     name: 'HTML5/CSS3',
-    img: react,
+    img: htmlcss,
     icon: <DiIcons.DiCss3/>
   },
   {
     id: 5,
     name: 'BOOTSTRAP',
-    img: react,
+    img: bootstrap,
     icon: <BsIcons.BsBootstrapFill/>
   },
   {
     id: 6,
     name: 'MATERIALIZE',
-    img: react,
+    img: material,
     icon: <DiIcons.DiMaterializecss/>
   },
   {
     id: 7,
-    name: 'ADOBE CREATIVE SUITS',
-    img: react,
-    icon: <SiIcons.SiAdobe />
+    name: 'PHP/Wordpress',
+    img: wordpress,
+    icon: <BsIcons.BsWordpress />
   },
 ]
 

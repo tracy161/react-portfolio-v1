@@ -1,6 +1,9 @@
-import react from '../assets/images/reactlogo.png';
 import styledComponents from '../assets/images/projectimages/Styled-Components-Landing-Page.png';
 import todolistApp from '../assets/images/projectimages/Todolist-app.png';
+import devConnector from '../assets/images/projectimages/devconnector.png';
+import contactKeeper from '../assets/images/projectimages/Contactkeeper.png';
+import calculatorApp from '../assets/images/projectimages/calculatorapp.png';
+import loanCalculator from '../assets/images/projectimages/loancalculator.png';
 
 const Projects = [
   {
@@ -18,31 +21,31 @@ const Projects = [
     tech: 'React.JS',
   },
   {
-    img: react,
-    link: '#',
-    des: 'losem', 
-    title: 'Project 3',
+    img: loanCalculator,
+    link: 'https://naughty-curie-b4c3dc.netlify.app/',
+    des: 'Simple Loan Calculator App Built from Vanilla JavaScript',
+    title: 'Loan Calculator App',
     tech: 'JavaScript',
   },
   {
-    img: react,
-    link: '#',
-    des: 'losem',
-    title: 'Project 4',
+    img: calculatorApp,
+    link: 'https://vibrant-kilby-468fa8.netlify.app/',
+    des: 'Simple Calculator App Built from React',
+    title: 'Canculator App',
     tech: 'React.JS',
   },
   {
-    img: react,
-    link: '#',
-    des: 'losem',
-    title: 'Project 5',
+    img: contactKeeper,
+    link: 'https://obscure-tundra-75378.herokuapp.com/',
+    des: 'Contact manager using React hooks & context',
+    title: 'Contact Keeper',
     tech: 'React.JS',
   },
   {
-    img: react,
-    link: '#',
-    des: 'losem',
-    title: 'Project 6',
+    img: devConnector,
+    link: 'https://tranquil-anchorage-03799.herokuapp.com/',
+    des: 'Build and deploy a social network with Node.js, Express, React, Redux & MongoDB',
+    title: 'Dev Connector',
     tech: 'Full Stack',
   },
 ];

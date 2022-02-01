@@ -43,17 +43,17 @@ const About = () => {
                     <span>React</span>
                     <ProgressBar animated now={70} />
                     <span>JavaScript</span>
-                    <ProgressBar animated now={5} />
+                    <ProgressBar animated now={75} />
                     <span>Redux.JS</span>
-                    <ProgressBar animated now={5} />
+                    <ProgressBar animated now={65} />
                   </Col>
                   <Col md={6}>
                     <span>Node.JS</span>
-                    <ProgressBar animated now={5} />
+                    <ProgressBar animated now={65} />
                     <span>HTML5/CSS3</span>
-                    <ProgressBar animated now={5} />
+                    <ProgressBar animated now={80} />
                     <span>Bootstrap/Materialize</span>
-                    <ProgressBar animated now={5} />
+                    <ProgressBar animated now={75} />
                   </Col>
                 </Row>
               </div>

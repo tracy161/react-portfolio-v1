@@ -9,7 +9,7 @@ AOS.init();
 
 const Result = () => {
   return (
-    <p>Your Message has been successfully sent. I will contact you soon</p>
+    <p style={{color: 'green'}}>Your Message has been successfully sent. I will contact you soon</p>
   );
 };
 
@@ -55,17 +55,7 @@ const Contact = () => {
       <Container>
         <Row className='pb-4'>
           <Col md={5}>
-            <div
-              className='contact-page-item'
-              data-aos='fade-right'
-              data-aos-offset='100'
-              data-aos-delay='20'
-              data-aos-duration='1000'
-              data-aos-easing='ease-in-out'
-              data-aos-mirror='true'
-              data-aos-once='false'
-              data-aos-anchor-placement='top-center'
-            >
+            <div className='contact-page-item'>
               <h2 className='mb-4'>My Contacts</h2>
               <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random
