@@ -58,22 +58,19 @@ const Contact = () => {
             <div className='contact-page-item'>
               <h2 className='mb-4'>My Contacts</h2>
               <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old.
+                Please Contact me for a full stack development project as per details below.
               </p>
               <div className='adress mb-4'>
                 <h3>Address</h3>
-                <span>245 King Street, Touterie Victoria 8520 Australia</span>
+                <span>Greater Melbourne, VIC, Australia</span>
               </div>
               <div className='phone mb-4'>
                 <h3>Phone</h3>
-                <span>0-123-456-7890</span>
-                <span>0-123-456-7890</span>
+                <span>0415 152 503</span>
               </div>
               <div className='email mb-4'>
                 <h3>Email</h3>
-                <span>sample@gmail.com</span>
+                <span>tracyp161@gmail.com</span>
               </div>
             </div>
           </Col>
