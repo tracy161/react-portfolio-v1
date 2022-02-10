@@ -4,6 +4,7 @@ import devConnector from '../assets/images/projectimages/devconnector.png';
 import contactKeeper from '../assets/images/projectimages/Contactkeeper.png';
 import calculatorApp from '../assets/images/projectimages/calculatorapp.png';
 import loanCalculator from '../assets/images/projectimages/loancalculator.png';
+import movie from '../assets/images/projectimages/movie.png'
 
 const Projects = [
   {
@@ -12,6 +13,13 @@ const Projects = [
     des: 'Build and Deploy a Todolist App with Node.js, Express, React, Redux & MongoDB',
     title: 'Todo List Portal',
     tech: 'Full Stack',
+  },
+  {
+    img: movie,
+    link: 'https://martinsmovies123456.netlify.app/',
+    des: 'A Movie Reviewing Web App using React hooks, Redux State Management & API Integration from The Movie Database',
+    title: 'Martin\'s Movies',
+    tech: 'React.JS',
   },
   {
     img: styledComponents,

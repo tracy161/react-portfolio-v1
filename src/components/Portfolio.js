@@ -100,7 +100,7 @@ const Portfolio = () => {
         <Row className='portfolio-row'>
           {items.map((item, index) => {
             return (
-              <Col md={4} style={{ padding: '25px 0' }}>
+              <Col md={3} style={{ padding: '25px 0' }}>
                 <Card
                   key={index}
                   style={{ margin: '15px', background: 'transparent' }}
