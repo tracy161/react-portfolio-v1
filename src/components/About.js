@@ -6,6 +6,8 @@ import '../assets/about.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import CV from '../assets/files/tracyCV2022.pdf';
+
 AOS.init();
 
 const About = () => {
@@ -31,9 +33,13 @@ const About = () => {
                 <h2>About Me</h2>
               </div>
               <p>
-                There isn't anything embarrassing hidden in the middle of text.
-                All the Lorem Ipsum generators on the Internet tend to repeat
-                predefined chunks as necessary you need to be sure
+                I am an accomplished and highly skilled Full Stack Developer
+                with the willingness to go beyond the standard work commitments
+                in designing, developing web applications and technology
+                solutions that provide exceptional user interfaces which are
+                scalable and integrate easily with existing systems. My goal is
+                to become an IT professional in a company, where I can enjoy
+                working and contribute to achieving business goals.
               </p>
               <div className='about-site-progress'>
                 <h3>What is my skill level?</h3>
@@ -57,9 +63,11 @@ const About = () => {
                   </Col>
                 </Row>
               </div>
-              <Button variant='outline-light' size='lg' className='about-btn'>
-                Download Resume
-              </Button>
+              <a href={CV} download>
+                <Button variant='outline-light' size='lg' className='about-btn'>
+                  Download Resume
+                </Button>
+              </a>
             </div>
           </Col>
           <Col md={5}>
