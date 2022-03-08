@@ -46,10 +46,10 @@ const About = () => {
                 <br />
                 <Row>
                   <Col md={6}>
-                    <span>React</span>
-                    <ProgressBar animated now={70} />
-                    <span>JavaScript</span>
-                    <ProgressBar animated now={75} />
+                    <span>React.JS/Next.JS</span>
+                    <ProgressBar animated now={60} />
+                    <span>JavaScript/TypeScript</span>
+                    <ProgressBar animated now={60} />
                     <span>Redux.JS</span>
                     <ProgressBar animated now={65} />
                   </Col>
@@ -58,8 +58,8 @@ const About = () => {
                     <ProgressBar animated now={65} />
                     <span>HTML5/CSS3</span>
                     <ProgressBar animated now={80} />
-                    <span>Bootstrap/Materialize</span>
-                    <ProgressBar animated now={75} />
+                    <span>Bootstrap/MaterializeCSS/Material UI</span>
+                    <ProgressBar animated now={70} />
                   </Col>
                 </Row>
               </div>
